@@ -1,0 +1,10 @@
+@font-face {
+	font-family: 'KlinicSlab';
+	src: 
+		url(Klinic/KlinicSlab_Personal_License/KlinicSlabLight.otf)
+		format('opentype');
+}
+
+div {
+	font-family: 'KlinicSlab', sans-serif;
+}
