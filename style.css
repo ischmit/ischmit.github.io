@@ -21,27 +21,11 @@
 		format('opentype');
 	font-weight: medium;
 }
-/*Light Weight*/
-@font-face {
-	font-family: 'KlinicSlab';
-	src: 
-		url(Klinic/KlinicSlab_Personal_License/KlinicSlabLight.otf)
-		format('opentype');
-	font-weight: lighter;
-}
-/*Medium Weight*/
-@font-face {
-	font-family: 'KlinicSlab';
-	src: 
-		url(Klinic/KlinicSlab_Personal_License/KlinicSlabMedium.otf)
-		format('opentype');
-	font-weight: medium;
-}
 /*Bold Weight*/
 @font-face {
 	font-family: 'KlinicSlab';
 	src: 
-		url(Klinic/KlinicSlab_Personal_License/KlinicSlabBook.otf)
+		url(Klinic/KlinicSlab_Personal_License/KlinicSlabBold.otf)
 		format('opentype');
 	font-weight: bold;
 }
@@ -49,7 +33,7 @@
 @font-face {
 	font-family: 'KlinicSlab';
 	src: 
-		url(Klinic/KlinicSlab_Personal_License/KlinicSlabBold.otf)
+		url(Klinic/KlinicSlab_Personal_License/KlinicSlabBookIt.otf)
 		format('opentype');
 	font-style: italic;
 }
@@ -57,7 +41,7 @@
 @font-face {
 	font-family: 'KlinicSlab';
 	src: 
-		url(Klinic/KlinicSlab_Personal_License/KlinicSlabLightItalic.otf)
+		url(Klinic/KlinicSlab_Personal_License/KlinicSlabLightIt.otf)
 		format('opentype');
 	font-weight: lighter;
 	font-style: italic;
@@ -66,7 +50,7 @@
 @font-face {
 	font-family: 'KlinicSlab';
 	src: 
-		url(Klinic/KlinicSlab_Personal_License/KlinicSlabMediumItalic.otf)
+		url(Klinic/KlinicSlab_Personal_License/KlinicSlabMediumIt.otf)
 		format('opentype');
 	font-weight: medium;
 	font-style: italic;
@@ -75,7 +59,7 @@
 @font-face {
 	font-family: 'KlinicSlab';
 	src: 
-		url(Klinic/KlinicSlab_Personal_License/KlinicSlabBoldItalic.otf)
+		url(Klinic/KlinicSlab_Personal_License/KlinicSlabBoldIt.otf)
 		format('opentype');
 	font-weight: bold;
 	font-style: italic;
