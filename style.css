@@ -5,7 +5,7 @@
 		url(Klinic/KlinicSlab_Personal_License/KlinicSlabBook.otf)
 		format('opentype');
 }
-/*Book Weight*/
+/*Light Weight*/
 @font-face {
 	font-family: 'KlinicSlab';
 	src: 
@@ -13,7 +13,7 @@
 		format('opentype');
 	font-weight: lighter;
 }
-/*Book Weight*/
+/*Medium Weight*/
 @font-face {
 	font-family: 'KlinicSlab';
 	src: 
@@ -21,7 +21,23 @@
 		format('opentype');
 	font-weight: medium;
 }
-/*Book Weight*/
+/*Light Weight*/
+@font-face {
+	font-family: 'KlinicSlab';
+	src: 
+		url(Klinic/KlinicSlab_Personal_License/KlinicSlabLight.otf)
+		format('opentype');
+	font-weight: lighter;
+}
+/*Medium Weight*/
+@font-face {
+	font-family: 'KlinicSlab';
+	src: 
+		url(Klinic/KlinicSlab_Personal_License/KlinicSlabMedium.otf)
+		format('opentype');
+	font-weight: medium;
+}
+/*Bold Weight*/
 @font-face {
 	font-family: 'KlinicSlab';
 	src: 
@@ -29,8 +45,73 @@
 		format('opentype');
 	font-weight: bold;
 }
+/*Book Weight Italic*/
+@font-face {
+	font-family: 'KlinicSlab';
+	src: 
+		url(Klinic/KlinicSlab_Personal_License/KlinicSlabBold.otf)
+		format('opentype');
+	font-style: italic;
+}
+/*Light Weight Italic*/
+@font-face {
+	font-family: 'KlinicSlab';
+	src: 
+		url(Klinic/KlinicSlab_Personal_License/KlinicSlabLightItalic.otf)
+		format('opentype');
+	font-weight: lighter;
+	font-style: italic;
+}
+/*Medium Weight Italic*/
+@font-face {
+	font-family: 'KlinicSlab';
+	src: 
+		url(Klinic/KlinicSlab_Personal_License/KlinicSlabMediumItalic.otf)
+		format('opentype');
+	font-weight: medium;
+	font-style: italic;
+}
+/*Bold Weight*/
+@font-face {
+	font-family: 'KlinicSlab';
+	src: 
+		url(Klinic/KlinicSlab_Personal_License/KlinicSlabBoldItalic.otf)
+		format('opentype');
+	font-weight: bold;
+	font-style: italic;
+}
 
-div {
+#lr {
+	font-family: 'KlinicSlab', sans-serif;
+	font-weight: lighter;
+}
+#li {
+	font-family: 'KlinicSlab', sans-serif;
+	font-weight: lighter;
+	font-style: italic;
+}
+#bkr {
+	font-family: 'KlinicSlab', sans-serif;
+}
+#bki {
+	font-family: 'KlinicSlab', sans-serif;
+	font-style: italic;
+}
+#mr {
+	font-family: 'KlinicSlab', sans-serif;
+	font-weight: medium;
+}
+#mi {
+	font-family: 'KlinicSlab', sans-serif;
+	font-weight: medium;
+	font-style: italic;
+}
+#bdr {
 	font-family: 'KlinicSlab', sans-serif;
 	font-weight: bold;
+}
+#bdi {
+	font-family: 'KlinicSlab', sans-serif;
+	font-weight: bold;
+	font-style: italic;
 }
