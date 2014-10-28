@@ -1,10 +1,36 @@
+/*Default*/
+@font-face {
+	font-family: 'KlinicSlab';
+	src: 
+		url(Klinic/KlinicSlab_Personal_License/KlinicSlabBook.otf)
+		format('opentype');
+}
+/*Book Weight*/
 @font-face {
 	font-family: 'KlinicSlab';
 	src: 
 		url(Klinic/KlinicSlab_Personal_License/KlinicSlabLight.otf)
 		format('opentype');
+	font-weight: lighter;
+}
+/*Book Weight*/
+@font-face {
+	font-family: 'KlinicSlab';
+	src: 
+		url(Klinic/KlinicSlab_Personal_License/KlinicSlabMedium.otf)
+		format('opentype');
+	font-weight: medium;
+}
+/*Book Weight*/
+@font-face {
+	font-family: 'KlinicSlab';
+	src: 
+		url(Klinic/KlinicSlab_Personal_License/KlinicSlabBook.otf)
+		format('opentype');
+	font-weight: bold;
 }
 
 div {
 	font-family: 'KlinicSlab', sans-serif;
+	font-weight: bold;
 }
