@@ -64,12 +64,36 @@
 	font-weight: bold;
 	font-style: italic;
 }
+#i {
+	width: auto;
+	height: 105px;
+	line-height: 120px;
+	padding: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 15px;
+	float: left;
+	margin-right: 0px;
+	background-color: #00aa32;
+	color: #ffffff;
+}
+#sch {
+	width: 300px;
+	float: left;
+	margin-right: 0px;
+	height: 105px;
+	line-height: 120px;
+	padding: 10px;
+	color: #434343;
+}
 
 #ims {
-	font-family: 'KlinicSlab'
+	font-family: 'KlinicSlab';
 	font-size: 95pt;
 	font-weight: bold;
 	font-style: italic;
+	width: 520px;
+	height: 200px;
 	margin: auto;
 	position: absolute;
 	top: 0;
