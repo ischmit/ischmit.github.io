@@ -65,37 +65,15 @@
 	font-style: italic;
 }
 
-#lr {
-	font-family: 'KlinicSlab', sans-serif;
-	font-weight: lighter;
-}
-#li {
-	font-family: 'KlinicSlab', sans-serif;
-	font-weight: lighter;
-	font-style: italic;
-}
-#bkr {
-	font-family: 'KlinicSlab', sans-serif;
-}
-#bki {
-	font-family: 'KlinicSlab', sans-serif;
-	font-style: italic;
-}
-#mr {
-	font-family: 'KlinicSlab', sans-serif;
-	font-weight: medium;
-}
-#mi {
-	font-family: 'KlinicSlab', sans-serif;
-	font-weight: medium;
-	font-style: italic;
-}
-#bdr {
-	font-family: 'KlinicSlab', sans-serif;
-	font-weight: bold;
-}
-#bdi {
-	font-family: 'KlinicSlab', sans-serif;
+#ims {
+	font-family: 'KlinicSlab'
+	font-size: 95pt;
 	font-weight: bold;
 	font-style: italic;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
 }
