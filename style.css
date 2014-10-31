@@ -148,6 +148,9 @@ i {
 	color: #00aa32;
 }
 
+a {
+	text-decoration: none;
+}
 
 body {
 	background: #eaeaea;
