@@ -4,6 +4,7 @@
 	src: 
 		url(Klinic/KlinicSlab_Personal_License/KlinicSlabBook.otf)
 		format('opentype');
+	font-weight: 400;	
 }
 /*Light Weight*/
 @font-face {
@@ -11,7 +12,7 @@
 	src: 
 		url(Klinic/KlinicSlab_Personal_License/KlinicSlabLight.otf)
 		format('opentype');
-	font-weight: lighter;
+	font-weight: 300;
 }
 /*Medium Weight*/
 @font-face {
@@ -19,7 +20,7 @@
 	src: 
 		url(Klinic/KlinicSlab_Personal_License/KlinicSlabMedium.otf)
 		format('opentype');
-	font-weight: medium;
+	font-weight: 500;
 }
 /*Bold Weight*/
 @font-face {
@@ -27,7 +28,7 @@
 	src: 
 		url(Klinic/KlinicSlab_Personal_License/KlinicSlabBold.otf)
 		format('opentype');
-	font-weight: bold;
+	font-weight: 600;
 }
 /*Book Weight Italic*/
 @font-face {
@@ -36,6 +37,7 @@
 		url(Klinic/KlinicSlab_Personal_License/KlinicSlabBookIt.otf)
 		format('opentype');
 	font-style: italic;
+	font-weight: 400;
 }
 /*Light Weight Italic*/
 @font-face {
@@ -43,7 +45,7 @@
 	src: 
 		url(Klinic/KlinicSlab_Personal_License/KlinicSlabLightIt.otf)
 		format('opentype');
-	font-weight: lighter;
+	font-weight: 300;
 	font-style: italic;
 }
 /*Medium Weight Italic*/
@@ -52,7 +54,7 @@
 	src: 
 		url(Klinic/KlinicSlab_Personal_License/KlinicSlabMediumIt.otf)
 		format('opentype');
-	font-weight: medium;
+	font-weight: 500;
 	font-style: italic;
 }
 /*Bold Weight*/
@@ -61,7 +63,7 @@
 	src: 
 		url(Klinic/KlinicSlab_Personal_License/KlinicSlabBoldIt.otf)
 		format('opentype');
-	font-weight: bold;
+	font-weight: 600;
 	font-style: italic;
 }
 #i {
@@ -75,8 +77,13 @@
 	float: left;
 	margin-right: 0px;
 	background-color: #00aa32;
-	color: #ffffff;
+	color: #eaeaea;
+	font-weight: 600;
 }
+/*#i:hover {
+	background-image: url(face2.jpg);
+	color: transparent;
+}*/
 #sch {
 	width: 300px;
 	float: left;
@@ -87,13 +94,20 @@
 	color: #434343;
 }
 
-#ims {
+#name {
+	width: 500px;
+	height: 140px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#centered {
 	font-family: 'KlinicSlab';
 	font-size: 95pt;
-	font-weight: bold;
+	font-weight: 400;
 	font-style: italic;
-	width: 520px;
-	height: 200px;
+	width: 620px;
+	height: 350px;
 	margin: auto;
 	position: absolute;
 	top: 0;
@@ -101,3 +115,24 @@
 	bottom: 0;
 	right: 0;
 }
+
+#descrip {
+	font-family: 'KlinicSlab';
+	font-size: 22pt; 
+	font-weight: 300;
+	color: #434343;
+	width: auto;
+	float: left;
+	text-align: center;
+}
+
+.em {
+	font-weight: 400;
+	color: #00aa32;
+}
+
+body {
+	background: #eaeaea;
+}
+
+
