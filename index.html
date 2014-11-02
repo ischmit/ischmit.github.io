@@ -5,6 +5,20 @@
 	<meta charset = "utf-8">
 	<link href = "style.css" type = "text/css" rel = "stylesheet">
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<script language="javascript"> 
+		function toggle() {
+			var ele = document.getElementById("icons");
+			var text = document.getElementById("contact");
+			if(ele.style.display == "block") {
+		    		ele.style.display = "none";
+				text.innerHTML = "show";
+		  	}
+			else {
+				ele.style.display = "block";
+				text.innerHTML = "hide";
+			}
+		} 
+	</script>
 </head>
 <body>
 	<div id = "centered">
@@ -13,9 +27,9 @@
 			<div id = "sch"> schmit </div>
 		</div>
 		<div id = "descrip"> 
-			I am Isabelle Schmit, a student and aspiring web developer and designer, majoring in Computer Science and Studio Arts at the University of Rochester. I strive to design and create things that are both functional and beautiful. If you're interested in my work, check out my <a href = "dresumebw.pdf" class = "em"> resume</a>, take a look at my <a href = "portfolio.html" class = "em"> portfolio</a>, and always feel free to <a href = "mailto:schmit.isabelle@gmail.com" class = "em"> contact me</a>.
+			I am Isabelle Schmit, a student and aspiring web developer and designer, majoring in Computer Science and Studio Arts at the University of Rochester. I strive to design and create things that are both functional and beautiful. If you're interested in my work, check out my <a href = "dresumebw.pdf" class = "em"> resume</a>, take a look at my <a href = "portfolio.html" class = "em"> portfolio</a>, and always feel free to <a id = "contact" href = "javascript:toggle()" class = "em"> contact me</a>.
 		</div>
-		<div id = "icons">
+		<div id = "icons" style="display: none">
 			<a href = "http://www.github.com/ischmit">
 				<i class = "fa fa-github-square fa-2x"></i> 
 			</a>
