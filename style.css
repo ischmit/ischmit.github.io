@@ -77,7 +77,7 @@
 	float: left;
 	margin-right: 0px;
 	background-color: #00aa32;
-	color: #eaeaea;
+	color: #efefef;
 	font-weight: 600;
 }
 /*#i:hover {
@@ -159,7 +159,7 @@ a {
 }
 
 body {
-	background: #eaeaea;
+	background: url("pw_maze_white.png");
 }
 
 
