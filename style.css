@@ -80,15 +80,15 @@
 	color: #efefef;
 	font-weight: 600;
 }
-.backgroundclip #im {
+ #im {
 	background: url("pw_maze_white.png");
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
-#im {
+/*#im {
 	color: #efefef;
-}
+}*/
 /*#i:hover {
 	background-image: url(face2.jpg);
 	color: transparent;

@@ -21,17 +21,6 @@
 			}
 		} 
 	</script>
-	<script src="modernizr-1.6.min.js"></script>
-	<script>
-	Modernizr.addTest('backgroundclip', function() {
-		var div = document.createElement('div');
-		if ('backgroundclip' in div.style)
-			return true;
-		'Webkit Moz 0 ms Khtml'.replace(/([A-Za-z]*/g, function(val) {
-			if (val + 'backgroundclip' in div.style) return true;
-		});
-	});
-	</script>
 </head>
 <body>
 	<div id = "centered">
