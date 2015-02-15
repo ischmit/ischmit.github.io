@@ -1,5 +1,17 @@
-<!DOCTYPE html>
+
+<!doctype html>
+<html>
+<head>
+<title>Mr.cof-fi</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
 <meta charset="utf-8">
+
+<link rel="stylesheet" href="stylesheets/styles.css">
+<link rel="stylesheet" href="stylesheets/pygment_trac.css">
+
+<script src="js/scale.fix.js"></script>
+<script src="js/spark.event.js"></script>
 <style>
 .chart {
   margin-left: auto;
@@ -30,9 +42,25 @@
 }
 
 </style>
+</head>
 <body>
-<div class="chart">
-  <script class="chart" src="http://d3js.org/d3.v3.min.js"></script>
+
+<div class="wrapper">
+    <header>
+        <h1>Mr.cof-fi</h1>
+        <p>brewing the internet - hackcooper '15</p>
+    </header>
+    <section>
+
+        <span id="cups"></span></br>
+
+        <p> A system that uses the <a href="">spark core</a> and Yo
+        to turn Mr. Coffee into Mr. Cof-Fi, automating and tracking your
+        coffee consumption over time. </p>
+
+    </section>
+
+    <script class="chart" src="http://d3js.org/d3.v3.min.js"></script>
   <script class="chart">
 
   var margin = {top: 20, right: 20, bottom: 30, left: 40},
@@ -96,5 +124,11 @@
   }
 
   </script>
+
 </div>
+<footer>
+    <p>Project maintained by <a href="https://github.com/jeremywrnr">jeremywrnr</a></p>
+</footer>
+
 </body>
+</html>
