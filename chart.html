@@ -45,7 +45,7 @@
 </head>
 <body>
 
-<div class="wrapper">
+<div class="wrapper" id="kitten">
     <header>
         <h1>Mr.cof-fi</h1>
         <p>brewing the internet - hackcooper '15</p>
@@ -82,7 +82,7 @@
       .orient("left")
       .ticks(11, "");
 
-  var svg = d3.select("wrapper").append("svg")
+  var svg = d3.select("kitten").append("svg")
       .attr("width", width + margin.left + margin.right)
       .attr("height", height + margin.top + margin.bottom)
     .append("g")
