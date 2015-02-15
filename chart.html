@@ -13,10 +13,6 @@
 <script src="js/scale.fix.js"></script>
 <script src="js/spark.event.js"></script>
 <style>
-.chart {
-  margin-left: auto;
-  margin-right: auto;
-}
 
 .bar {
   fill: #66ccff;
@@ -64,7 +60,7 @@
   <script class="chart">
 
   var margin = {top: 20, right: 20, bottom: 30, left: 40},
-      width = 960 - margin.left - margin.right,
+      width = 100% - margin.left - margin.right,
       height = 500 - margin.top - margin.bottom;
 
   var x = d3.scale.ordinal()
