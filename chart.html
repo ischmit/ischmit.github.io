@@ -2,122 +2,96 @@
 <!doctype html>
 <html>
 <head>
-<title>Mr.cof-fi</title>
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-<meta http-equiv="X-UA-Compatible" content="chrome=1">
-<meta charset="utf-8">
+  <title>Mr.cof-fi</title>
 
-<link rel="stylesheet" href="styles1.css">
-<link rel="stylesheet" href="pygment_trac.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta charset="utf-8">
 
-<script src="js/scale.fix.js"></script>
-<script src="js/spark.event.js"></script>
-<style>
+  <link rel="stylesheet" href="stylesheets/styles.css">
+  <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+  <link rel="stylesheet" href="stylesheets/graphstyle.css">
 
-.bar {
-  fill: #66ccff;
-}
-
-.bar:hover {
-  fill: #ff9999;
-}
-
-.axis {
-  font: 10px sans-serif;
-}
-
-.axis path,
-.axis line {
-  fill: none;
-  stroke: #000;
-  shape-rendering: crispEdges;
-}
-
-.x.axis path {
-  display: none;
-}
-
-</style>
+  <script src="js/scale.fix.js"></script>
+  <script src="js/spark.event.js"></script>
 </head>
+
 <body>
 
 <div class="wrapper" >
-    <header>
-        <h1>Mr.cof-fi</h1>
-        <p>brewing the internet - hackcooper '15</p>
-    </header>
-    <section id="kitten">
+  <header>
+    <h1>Mr.cof-fi</h1>
+    <p>brewing the internet - hackcooper '15</p>
+  </header>
 
-        <span id="cups"></span></br>
-
-        <p> A system that uses the <a href="">spark core</a> and Yo
+  <section id="kitten">
+    <span id="cups"></span></br>
+    <p> A system that uses the <a href="">spark core</a> and Yo
         to turn Mr. Coffee into Mr. Cof-Fi, automating and tracking your
         coffee consumption over time. </p>
+  </section>
 
-    </section>
-
-    <script class="chart" src="http://d3js.org/d3.v3.min.js"></script>
+  <script class="chart" src="http://d3js.org/d3.v3.min.js"></script>
   <script class="chart">
-
-  var margin = {top: 20, right: 40, bottom: 30, left: 20},
+    var margin = {top: 20, right: 40, bottom: 30, left: 20},
       width = 640 - margin.left - margin.right,
       height = 400 - margin.top - margin.bottom;
 
-  var x = d3.scale.ordinal()
+    var x = d3.scale.ordinal()
       .rangeRoundBands([0, width], .1);
 
-  var y = d3.scale.linear()
+    var y = d3.scale.linear()
       .range([height, 0]);
 
-  var xAxis = d3.svg.axis()
+    var xAxis = d3.svg.axis()
       .scale(x)
       .orient("bottom");
 
-  var yAxis = d3.svg.axis()
+    var yAxis = d3.svg.axis()
       .scale(y)
       .orient("left")
       .ticks(11, "");
 
-  var svg = d3.select("#kitten").append("svg")
+    var svg = d3.select("#kitten").append("svg")
       .attr("width", width + margin.left + margin.right)
       .attr("height", height + margin.top + margin.bottom)
-    .append("g")
+      .append("g")
       .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-  d3.tsv("data.tsv", type, function(error, data) {
-    x.domain(data.map(function(d) { return d.date; }));
-    y.domain([0, d3.max(data, function(d) { return d.cups; })]);
+    d3.tsv("data.tsv", type, function(error, data) {
+      x.domain(data.map(function(d) { return d.date; }));
+      y.domain([0, d3.max(data, function(d) { return d.cups; })]);
 
-    svg.append("g")
+      svg.append("g")
         .attr("class", "x axis")
         .attr("transform", "translate(0," + height + ")")
         .call(xAxis);
 
-    svg.append("g")
+      svg.append("g")
         .attr("class", "y axis")
         .call(yAxis)
-      .append("text")
+        .append("text")
         .attr("transform", "rotate(-90)")
         .attr("y", 6)
         .attr("dy", ".71em")
         .style("text-anchor", "end")
         .text("Cups");
 
-    svg.selectAll(".bar")
+      svg.selectAll(".bar")
         .data(data)
-      .enter().append("rect")
+        .enter().append("rect")
         .attr("class", "bar")
         .attr("x", function(d) { return x(d.date); })
         .attr("width", x.rangeBand())
         .attr("y", function(d) { return y(d.cups); })
         .attr("height", function(d) { return height - y(d.cups); });
+        
+    });
 
-  });
-
-  function type(d) {
-    d.cups = +d.cups;
-    return d;
-  }
+    function type(d) {
+      d.cups = +d.cups;
+      return d;
+    }
 
   </script>
 
